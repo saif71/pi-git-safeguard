@@ -1,0 +1,56 @@
+{
+  "name": "pi-git-safeguard",
+  "version": "0.1.0",
+  "description": "pi extension: gate git/gh write operations (commit, push, PRs, and more) behind interactive user approval.",
+  "type": "module",
+  "license": "MIT",
+  "private": false,
+  "author": "saif71 (https://github.com/saif71)",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi",
+    "git",
+    "guard",
+    "safety",
+    "permissions"
+  ],
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "piExtension": {
+    "lifecycle": "stable"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node test/match.test.mjs && node test/handler.test.mjs",
+    "check": "npm run typecheck && npm run test"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "0.84.4",
+    "@types/node": "^26.4.1",
+    "jiti": "^2.3.0",
+    "typescript": "7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saif71/pi-git-safeguard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saif71/pi-git-safeguard/issues"
+  },
+  "homepage": "https://github.com/saif71/pi-git-safeguard#readme"
+}
