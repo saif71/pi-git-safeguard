@@ -1,6 +1,6 @@
 # pi-git-safeguard
 
-A [pi](https://github.com/earendil-works/pi-coding-agent) extension that gates git
+A [pi](https://pi.dev/t) extension that gates git
 and GitHub CLI **write operations** behind explicit user approval — so the agent
 can't autonomously `git commit`, `git push`, open or merge PRs, force-delete
 branches, or rewrite history without you saying so.
